@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dungeon Manager</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" >
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="content">
+
+      <header>
+        <div class="container" id="titleBar">
+          <div class="row justify-content-end">
+            <div class="titlebar-option" id="minimizeButton"><i class="far fa-window-minimize"></i></div>
+            <div class="titlebar-option" id="maximizeButton"><i class="far fa-window-maximize"></i></div>
+            <div class="titlebar-option" id="closeButton"><i class="far fa-window-close"></i></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container-fluid" style="height:100%;">
+        <div class="row justify-content-begin" style="height:100%;">
+          <div id="blacklateralBorder">
+            <img id="appIcon" src="../../res/img/DungeonManager.png">
+          </div>
+          <div class="justify-content-begin" id="greylateralBorder">
+            <div class="menu-button">
+              <div class="main-text">Novo Combate</div>
+            </div>
+            <div class="menu-button">
+              <div class="main-text">Listar Personagens</div>
+            </div>
+            <div class="menu-button">
+              <div class="main-text">Listar Efeitos</div>
+            </div>
+            <div class="menu-button">
+              <div class="main-text">Sobre</div>
+            </div>
+          </div>
+          <div class="justify-content-begin">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../../renderer.js"></script>
+    <script src="./electron-customization/electron-customization.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/popper.js/dist/popper.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
