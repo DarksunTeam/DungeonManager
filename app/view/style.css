@@ -1,8 +1,8 @@
 :root {
-  --main-bg-color: #186161;
-  --menu-bg-color: #124C4C;
-  --titlebar-bg-color: #0D3838;
-  --titlebar-bg-hover: #0B3030;
+  --main-bg-color: #7a2725;
+  --menu-text-color: #b6a8a8;
+  --titlebar-bg-color: #531a19;
+  --titlebar-bg-hover: #66211f;
   --titlebar-bg-hover-alert: #f04747;
   --titlebar-button-color: #b9bbbe;
 }
@@ -43,16 +43,28 @@ header {
 }
 
 .menu-button {
-  height: 3rem;
-  border-radius: 0.5rem;
-  width: 80%;
+  height: 3.5rem;
   margin: 0 auto;
   display: flex;
   margin-top: 10px;
 }
 
+.menu-button i {
+  color: var(--menu-text-color);
+  font-size: 20px;
+}
+
+.menu-button span {
+  font-size: 9px;
+  color: var(--menu-text-color);
+}
+
 .menu-button:hover {
   background-color: var(--titlebar-bg-hover);
+}
+
+.menu-button:active {
+  border-left: solid;
 }
 
 .titlebar-option {
@@ -73,9 +85,10 @@ header {
   width:50px;
   height:50px;
   margin: auto;
-	position: absolute;
+	position: relative;
   left: 0;
-  margin-top: 10px
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #content {
@@ -95,13 +108,7 @@ header {
 #blacklateralBorder {
   background-color: var(--titlebar-bg-color);
   height: 100%;
-  width: 50px;
-}
-
-#greylateralBorder {
-  background-color: var(--menu-bg-color);
-  height: 100%;
-  width: 200px;
+  width: 70px;
 }
 
 #maximizeButton:hover {
