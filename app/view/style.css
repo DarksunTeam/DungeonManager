@@ -1,10 +1,28 @@
 :root {
-  --main-bg-color: #7a2725;
-  --menu-text-color: #b6a8a8;
-  --titlebar-bg-color: #531a19;
-  --titlebar-bg-hover: #66211f;
+  --red-1:#3f1413;
+  --red-2:#531a19;
+  --red-3:#66211f;
+  --red-4:#7a2725;
+  --red-5:#8e2d2b;
+  --red-6:#a13431;
+  --red-7:#b53a37;
+
+  --gray-1:#5c5c5c;
+  --gray-2:#696969;
+  --gray-3:#767676;
+  --gray-4:#838383;
+  --gray-5:#8f8f8f;
+  --gray-6:#9c9c9c;
+  --gray-7:#a9a9a9;
+
+  --main-bg-color: var(--red-4);
+  --menu-text-color: var(--gray-7);
+  --titlebar-bg-color: var(--red-2);
+  --titlebar-bg-hover: var(--red-3);
   --titlebar-bg-hover-alert: #f04747;
   --titlebar-button-color: #b9bbbe;
+  --menu-button-hover-color: var(--gray-2);
+  --menu-button-selected-color: var(--gray-1);
 }
 
 * {
@@ -20,17 +38,6 @@ div {
   color: white;
 }
 
-header {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  background-color: var(--titlebar-bg-color);
-  color: black;
-  align-self: stretch;
-  -webkit-app-region: drag;
-  height: 25px;
-}
-
 .main-text {
   font-size: 15px;
   width: 100%;
@@ -43,10 +50,14 @@ header {
 }
 
 .menu-button {
+  width: 100%;
   height: 3.5rem;
   margin: 0 auto;
   display: flex;
   margin-top: 10px;
+  background-color: var(--titlebar-bg-color);
+  border: 0;
+  border-left: solid transparent;
 }
 
 .menu-button i {
@@ -60,25 +71,16 @@ header {
 }
 
 .menu-button:hover {
-  background-color: var(--titlebar-bg-hover);
+  background-color: var(--menu-button-hover-color);
 }
 
-.menu-button:active {
-  border-left: solid;
+.menu-button:focus {
+  outline: none;
 }
 
-.titlebar-option {
-  color: var(--titlebar-button-color);
-  height: 25px;
-  width: 35px;
-  text-align: center;
-  font-size: 1rem;
-  cursor: pointer;
-  -webkit-app-region: no-drag;
-}
-
-#titleBar {
-    margin-right: inherit;
+.menu-button-selected {
+  background-color: var(--menu-button-selected-color);
+  border-left: solid var(--gray-7);
 }
 
 #appIcon {
@@ -99,28 +101,10 @@ header {
   align-items: center;
 }
 
-#closeButton:hover {
-  background-color: var(--titlebar-bg-hover-alert);
-  height: 25px;
-  width: 35px;
-}
-
 #blacklateralBorder {
   background-color: var(--titlebar-bg-color);
   height: 100%;
   width: 70px;
-}
-
-#maximizeButton:hover {
-  background-color: var(--titlebar-bg-hover);
-  height: 25px;
-  width: 35px;
-}
-
-#minimizeButton:hover {
-  background-color: var(--titlebar-bg-hover);
-  height: 25px;
-  width: 35px;
 }
 
 #text {
