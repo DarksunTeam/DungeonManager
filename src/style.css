@@ -20,9 +20,9 @@
   --titlebar-bg-color: var(--red-2);
   --titlebar-bg-hover: var(--red-3);
   --titlebar-bg-hover-alert: #f04747;
-  --titlebar-button-color: #b9bbbe;
-  --menu-button-hover-color: var(--gray-2);
-  --menu-button-selected-color: var(--gray-1);
+  --titlebar-button-color: var(--gray-7);;
+  --menu-button-hover-color: var(--red-3);
+  --menu-button-selected-color: var(--red-1);
 }
 
 * {
@@ -36,6 +36,10 @@ div {
   font-size: 3rem;
   font-family: calibri;
   color: white;
+}
+
+.background {
+  height: 100%;
 }
 
 .main-text {
